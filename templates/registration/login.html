@@ -1,0 +1,20 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <title>Fox</title>
+{% endblock %}
+{% block content %}
+    <form method="POST" class="box">
+        {% csrf_token %}
+        <h1>Login</h1>
+        <p>
+            {{ form.username }}
+        </p>
+        <p>
+            {{ form.password }}
+        </p>
+        <input type="submit" = value="login">
+        <input type="hidden" name="next" value="{{ next }}">
+    </form>
+{% endblock %}

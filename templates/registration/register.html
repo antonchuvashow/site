@@ -1,0 +1,17 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/reg.css' %}">
+    <title>Fox</title>
+{% endblock %}
+{% block content %}
+    <form method="POST" class="box">
+        <h1>Sign up</h1>
+        {% csrf_token %}
+        {{ form.username }}<br>
+        {{ form.email }}<br>
+        {{ form.password1 }}<br>
+        {{ form.password2 }}<br>
+        <button type='submit' class="button">Sign up</button>
+    </form>
+{% endblock %}

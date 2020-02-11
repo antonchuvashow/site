@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(51, 69, 129);
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+li{
+    float: left;
+    padding: 20px;
+}
+.navbar:hover{
+    background: rgb(34, 46, 87);
+    transition:0.5s;
+    cursor: pointer;
+}
+.navbar{
+    border-radius: 4px;
+}
+li a{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    font-size: 30px;
+    padding: 0;
+    margin-top: 5px;
+    margin-right: 50px;
+    margin-left: 10px;
+    text-align: center;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    cursor: pointer ;
+}
+.login{
+    float:right;
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+}
+.login:hover{
+    background: rgb(34, 46, 87);
+    transition:0.5s;
+    cursor: pointer;
+}
+.logout{
+    float:right;
+    padding: 2px;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    font-size: small;
+}
+.logout:hover{
+    background: rgb(34, 46, 87);
+    transition:0.5s;
+    cursor: pointer;
+}
+p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+}
