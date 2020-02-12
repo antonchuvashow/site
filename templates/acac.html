@@ -1,10 +1,5 @@
-{% load static %}
-    <link rel="stylesheet" href="{% static 'css/acac.css' %}">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway&display=swap" rel="stylesheet">
-<p>
 {% autoescape off %}
 Hi {{ user.username }},
 Please click on the link to confirm your registration<br><br>
-<a href="http://{{ domain }}{% url 'activate' cpuser=uid token=token %} " class="cross_line">Click</a>
+http://{{ domain }}{% url 'activate' cpuser=uid token=token %}
 {% endautoescape %}
-</p>
